@@ -1,4 +1,38 @@
 @charset "UTF-8";
-body{
-    background-color: bisque;
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    /*text-transform: uppercase; transforma td em maiscula*/
+    font-variant: small-caps;/*apenas as 1ª letras maiores*/
+}
+
+header > p{
+    padding-bottom: 50px; /*deixa simetrico o cabeçalho, pk ja tenho o 50px top tb*/
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{/*qdo passar o mouse por cima*/
+    text-decoration: underline;
+
 }
