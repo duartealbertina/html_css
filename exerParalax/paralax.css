@@ -26,13 +26,30 @@ header > p{
     padding-bottom: 50px; /*deixa simetrico o cabeçalho, pk ja tenho o 50px top tb*/
 }
 
-a{
+header a, footer a{
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
 
-a:hover{/*qdo passar o mouse por cima*/
+header a:hover, footer a:hover{/*qdo passar o mouse por cima*/
     text-decoration: underline;
+}
 
+section.normal{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.363);
+}
+
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.301);
+    color: white;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
 }
