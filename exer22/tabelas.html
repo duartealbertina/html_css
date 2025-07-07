@@ -10,6 +10,8 @@
         }
         table{
               width: 500px;
+              border-collapse: collapse;
+              position: relative;
         }
         td, th{
            border: 1px solid black;
@@ -17,7 +19,14 @@
         }
 
         thead, tfoot{
-            background-color: rgba(97, 94, 94, 0.753);
+            background-color: #383838;
+            color: white;
+        }
+
+        thead > tr > th {/*para deixar o cabeçalho fixo enquanto o scrola apenas na tabela*/
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
         }
 
        /* tbody > tr:nth-child(odd){ /*pseudo-classe para dizer q apenas linhas impares d cor cinza ou podia ser even para linhas pares
@@ -55,7 +64,7 @@
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td class="num">45 919 049</td>
+                <td class="num">45 919 049</td> <!--Mesclagem de celulas: colspan="2" fazer com que uma celula ocupe 2 colunas e rowspan="2"-fazer com que uma celula estende por 2 linhas-->
             </tr>
             <tr>
                 <td>Minas Gerais</td>
@@ -89,5 +98,9 @@
               <td class="num"><strong>999999999</strong></td> <!--tpd posterior fazer um somatório automático-->
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, expedita nulla commodi sunt labore, iste nihil debitis perferendis non deleniti delectus veritatis voluptas odit illo at, cumque quia fugit. Adipisci.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo molestias nesciunt autem nisi! Assumenda quae mollitia voluptatum, nostrum officiis dicta quis vero, sit deserunt temporibus velit molestiae a officia doloribus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo molestias nesciunt autem nisi! Assumenda quae mollitia voluptatum, nostrum officiis dicta quis vero, sit deserunt temporibus velit molestiae a officia doloribus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo molestias nesciunt autem nisi! Assumenda quae mollitia voluptatum, nostrum officiis dicta quis vero, sit deserunt temporibus velit molestiae a officia doloribus.</p>
 </body>
 </html>
